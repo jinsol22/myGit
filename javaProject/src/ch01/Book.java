@@ -1,6 +1,7 @@
 package ch01;
 
 public class Book {//도서판매정보 프로그램(생성자 버전)
+	//깃 테스트
 	//멤버변수
 	private String bookName;//책이름
 	private String author;//저자
