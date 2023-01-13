@@ -1,0 +1,27 @@
+package ch12;
+ 
+abstract class Action{
+	public abstract void exec();
+}
+
+public class ActionExam extends Action {
+
+	@Override
+	public void exec() {
+		System.out.println("I am Child");
+		
+	}
+	public static void main(String[] args) {
+		Action a = new ActionExam() {//익명내부클래스(이름없는)
+			String name = "Kim";
+			@Override
+			public void exec() {
+				System.out.println("나는" + name + "이다.");
+			}
+			
+		};//중괄호 뒤에 세미콜론 있으면 익명내부클래스 이다.
+		a.exec();
+		
+	}
+
+}
